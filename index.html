@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(to left,rgb(0, 238, 230), rgb(79, 213, 223));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40%;
+        }
+
+        form{
+            background-color: white;
+            width: 700px;
+            height: auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .input-regis{
+            width: 100%;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        .button{
+            width: 100px;
+            background: linear-gradient(to left,rgb(238, 57, 57), rgb(35, 88, 221));
+            
+            
+        }
+        .btn-reset{
+            width: 50%;
+            background: linear-gradient(to left, rgb(45, 56, 30));
+            color: white;
+            font-size: bold;
+            height: 30px;
+            border-radius: 15px;
+            margin-top: 15px;
+            border: none;
+            box-shadow: 0px 0px 10px rgb(0, 0,0,0.3);
+        }
+        .Dangnhap{
+            width: 250px;
+            background: linear-gradient(to left, rgb(69, 213, 69), rgb(205, 238, 59));
+            color: rgb(35, 204, 255);
+            font-size: bold;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 20px;
+            border: none;
+            box-shadow: 15px 0px 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2 align="center">Register</h2>
+        <!-- Tên người dùng -->
+         <label for="">User name</label><br>
+         <input class="input-regis" type="text">
+         <!-- Mật khẩu -->
+          <label for="">password</label><br>
+         <input class="input-regis" type="password">
+         <!-- xác nhận mật khẩu -->
+          <label for=""> Confirm password</label><br>
+         <input class="input-regis" type="password">
+         <!-- upload ảnh -->
+        <label for="">upload personal image</label><br>
+         <input class="input-regis" type="file" name="" id=""><br><br>
+         <!-- Địa chỉ -->
+           <label for="">Address</label><br>
+         <input class="input-regis" type="text">
+         <!-- Giơ tính -->
+          <label for="">Gender</label><br>
+          <label for="">
+            <input type="radio" name="gender" id="">
+            Male
+          </label>
+        <label for="">
+            <input type="radio" name="gender" id="">
+            Female
+          </label>
+          <label for="">
+            <input type="radio" name="gender" id="">
+            Other
+          </label><br>
+          <button type="submit">Submit</button>
+
+          <label ><br>
+            <!-- demo checkbox -->
+             <br>
+            <label for="">Favauite</label> <br>
+            <label for="">
+                <input type="checkbox" value="rideMotor">
+                Ride motor
+            </label>
+            <label for="">
+                <input type="checkbox" value="readBook">
+                Read book
+            </label>
+            <label for="">
+                <input type="checkbox" value="videoGame">
+                Video game
+            </label>
+
+            <!-- textare -->
+             <!-- <br><br>
+             <textarea name="" id=""></textarea>
+
+             <br><br><label for=""> carband</label>
+             <select name="car" id="cars">
+                <option value="">totoya</option>
+                <option value="">bwm</option>
+                <option value="">honda</option>
+                <option value="">huyndai</option>
+             </select> -->
+
+             <!-- Lựa chọn ngày tháng -->
+              <!-- <br><br>
+              <label for="">Date</label>
+              <input type="Date"> 
+             <input type="number" min="10" max="150">
+              <input type="range"> -->
+
+            <!-- submit data -->
+            <br>
+            <input class="btn-reset" type="reset"> <br><br>
+            <button  class="Dangnhap" type="submit">dang nhap</button>
+
+             <!-- Data list -->
+              <br>
+              <label for="">Search</label><br>
+              <input list="data" placeholder="">
+
+
+
+
+
+          </label>
+    </form>
+</body>
+</html>
