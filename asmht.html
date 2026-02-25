@@ -2,8 +2,155 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoa Hoang Shop</title>
-    <link rel="stylesheet" href="/style1.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+        }
+        .banner{
+            background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+        }
+        .banner h1{
+            font-size: 40px;
+            letter-spacing: 4px;
+        }
+        .banner button{
+            padding: 10px 25px;
+            border: 2px solid #7ca24d;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+        .banner button:hover{
+            background: #7ca24d;
+        }
+
+
+        /* HEADER */
+        header {
+            background: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MENU */
+        nav {
+            background: #c0392b;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* BANNER */
+        .banner {
+            background: orange;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            animation: slide 2s;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product {
+            background: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px gray;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* BOX MODEL */
+        .box {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* FORM */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea, select {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        /* BUTTON */
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: green;
+        }
+
+        /* ANIMATION */
+        @keyframes slide {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOOTER */
+        footer {
+            background: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+    
 </head>
 <body>
 
@@ -21,7 +168,7 @@
     <a href="#lienhe">Liên hệ</a>
 </nav>
 <div class="banner">
-    <h1>SPECIALLY CRAFTED TEA</h1>
+    <h1>SPECIALLY CRAFTED GAME</h1>
     <button>EXPLORE</button>
 </div>
 
